@@ -6,12 +6,13 @@
 interface users {
   id:number;
   name:string;
+  email?:string
 }
 // 타입 작성
 type userWith ={
   id:number,
   name:string,
-  email:string
+  email?:string
 }
 
 const user:users = {
