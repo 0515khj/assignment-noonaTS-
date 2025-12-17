@@ -232,35 +232,35 @@ console.log(getStatusMessage(TaskStatus.Completed)); // "작업이 완료되었�
 
   }
 
-// function processTask(status:TaskStatus2, input: unknown): string {
+ function processTask(status:TaskStatus2, input: unknown): string {
 
 
-//   if(typeof input !== 'string'){
-//     throw new Error ('입력값은 문자열어여야 합니다.')
-//   }
+   if(typeof input !== 'string'){
+     throw new Error ('입력값은 문자열어여야 합니다.')
+   }
 
-//   if(status === TaskStatus2.Pending){
-//     return input.toUpperCase();
-//   }else if(status === TaskStatus2.InProgress){
-//     return input.toLowerCase();
-//   }else if(status === TaskStatus2.Completed){
-//     return "완료" + input;
-//   }else{
-//     throw new Error ("작업이 실패했씁니다.")
-//   }
-// }
+   if(status === TaskStatus2.Pending){
+     return input.toUpperCase();
+   }else if(status === TaskStatus2.InProgress){
+     return input.toLowerCase();
+   }else if(status === TaskStatus2.Completed){
+     return "완료" + input;
+  }else{
+     throw new Error ("작업이 실패했씁니다.")
+   }
+ }
 
 // 테스트 코드
-// console.log(processTask(TaskStatus2.Pending, "task1")); 
+ console.log(processTask(TaskStatus2.Pending, "task1")); 
 
-// console.log(processTask(TaskStatus2.InProgress, "TaskA")); 
+ console.log(processTask(TaskStatus2.InProgress, "TaskA")); 
 
-// console.log(processTask(TaskStatus2.Completed, "Report1")); 
+ console.log(processTask(TaskStatus2.Completed, "Report1")); 
 
-// console.log(processTask(TaskStatus2.Failed, "TaskX")); 
+ console.log(processTask(TaskStatus2.Failed, "TaskX")); 
 // 에러: 작업이 실패했습니다.
 
-// console.log(processTask(TaskStatus2.Pending, 42)); 
+ console.log(processTask(TaskStatus2.Pending, 42)); 
 // 에러: 입력값은 문자열이어야 합니다.
 
 /* 문제 3* */
