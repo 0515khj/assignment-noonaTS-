@@ -74,7 +74,7 @@ const users = [
 console.log(pluck(users, "id")); // [1, 2]
 console.log(pluck(users, "name")); // ["Alice", "Bob"]
 
-/* 문제은행 11강- 제네릭 타입 */
+/* 문제 은행 12. 리터럴 타입 */
 
 /* 문제 1* */
 
