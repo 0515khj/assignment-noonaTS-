@@ -3,7 +3,7 @@
 /* 문제 1* */
 
 // 매개변수, 리턴타입 정의 필요 
-function getFirstElement<T>(array:T[]):T {
+function getFirstElement<T>(array:T[]):T | undefined {
   // 여기에 구현
   return array[0]
 
